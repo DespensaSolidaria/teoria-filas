@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(6, 116, 227);
+    background: radial-gradient(circle, rgba(6,116,227,0.8) 26%, rgba(0,212,255,0.8) 88%);
+    background-size: cover;
+    background-position: center;
+}
+
+.bloco {
+    border-radius: 15px;
+    padding: 2%;
+    background-color: #FFF;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold; 
+    color: #FFF;
+}
+
+.textoCard {
+    color: rgb(0,212,255);
+}
