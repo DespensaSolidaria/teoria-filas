@@ -18,6 +18,10 @@ $(document).ready(() => {
         return resultado;
     };
 
+    $("#btnLimpar").click(() => {
+        $("#resultados").html("");
+    });
+
     $("#btnCalcular").click(() => {
         let html = "";
 
