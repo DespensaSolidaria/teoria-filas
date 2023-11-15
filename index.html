@@ -28,6 +28,13 @@
                 <label for="txtCanaisAtendimento">Número de canais de atendimento:</label>
                 <input class="form-control" type="number" step="0.01" min="0" name="txtCanaisAtendimento" id="txtCanaisAtendimento" placeholder="Insira o número de canais de atendimento..."><br>
 
+                <label for="slUnidade">Unidade de tempo:</label>
+                <select class="form-control" name="slUnidade" id="slUnidade">
+                  <option value="Horas">Hora</option>
+                  <option value="Minutos">Minuto</option>
+                  <option value="Segundos">Segundo</option>
+                </select><br>
+
                 <button type="button" class="btn btn-outline-primary" id="btnCalcular">Calcular</button>
                 <button type="reset" class="btn btn-outline-dark" id="btnLimpar">Limpar</button>
             </form>
@@ -39,6 +46,7 @@
         <div class="row justify-content-center">
             <div class="col col-lg-10 col-md-12 col-sm-12 bloco">
               <h3 class="textoCard">Resultados</h3>
+              <span id="resultados"></span>
             </div>
         </div>
     </div>
