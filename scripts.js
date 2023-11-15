@@ -31,7 +31,7 @@ $(document).ready(() => {
         const unidade = $("#slUnidade option:selected").val();
 
         const p = chegadaClientes / (capacidade * canaisAtendimento);
-        html += `Utilização do sistema (p) = ${formatarNumero(p)} ou ${formatarNumeroPercentil(p)}%<br>`;
+        html += `Utilização do sistema (p) = ${formatarNumero(p)} ou ${formatarNumeroPercentil(p)}%${p >= 1 ? " - <b><u>UTILIZE UM MAIOR NÚMERO DE CANAIS!</u></b>" : ""}<br>`;
 
         const Lo = canaisAtendimento * p;
         html += `Ocupação do sistema (Lo) = ${formatarNumero(Lo)}<br>`;
